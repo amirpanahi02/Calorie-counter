@@ -1,8 +1,9 @@
+
 const StorageCtrl = (function(){
     return{
         getItemsFromStorage:function(){
             let items;
-            if(localStorage.getItem('items') == null){z
+            if(localStorage.getItem('items') == null){
                 items = []
             } else {
                 items = JSON.parse(localStorage.getItem("items"))
